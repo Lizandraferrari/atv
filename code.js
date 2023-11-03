@@ -13,6 +13,7 @@ function logar(){
                 let statuslogin = JSON.stringify(dados[i]);
                 sessionStorage.setItem("user" , statuslogin);
                 verifica = true;
+                document.getElementById("sttlogin").innerHTML = `<p>Seja bem vindo ${dados[i].nome}</p>`
                 alert('Logado com sucesso!')
                 break;
             }
@@ -23,14 +24,14 @@ function logar(){
     }    
 }
 
-function verificarLogin() {
+/*function verificarLogin() {
     var logado = sessionStorage.getItem('user');
   
     if (logado != "") {
         //let nome = logado.nome
       document.getElementById("sttlogin").innerHTML = "<i>Boas compras!</i>"
     }
-  }
+  }*/
 
 function cadastro(){
     let login = document.querySelector('#login').value;
@@ -109,4 +110,8 @@ function carrinhoAdd(produto){
                 sessionStorage.setItem("carrinho",JSON.stringify(compra));
         }
     }   
+}
+
+function esvaziarCarrinho(){
+    sessionStorage.removeItem("carrinho");    
 }
