@@ -1,3 +1,42 @@
 .prod{
     width: 20%;
+    text-align: center;
+    margin-top: 5%;
+    margin: 2%;
+    padding: 1%;
+}
+
+img{
+    border-radius: 3%;
+}
+
+.navzinha{
+    background-color: #666666;
+    align-items: absolute;
+    padding: 1%;
+}
+
+.centroForm{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+}
+.borda{
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 3%;
+    box-shadow: -9px -1px 50px grey;
+    width:30rem;
+}
+.botnav{
+    border-radius: 10px;
+    background-color: white;
+} 
+.botoes{
+    border-radius: 10px;
+    color:white;
+    background-color: #666666;
+    width:80%;
+    align-self: center;
 }
